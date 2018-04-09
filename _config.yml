@@ -1,8 +1,9 @@
-exclude: [vendor]
+exclude:
+  - .github
 
 collections:
   - guestbook
 
 workshop:
-  name: test
+  name: 
   github: https://github.com/PandelisZ/workshop-guestbook
