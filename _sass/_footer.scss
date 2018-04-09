@@ -1,0 +1,59 @@
+//Join now footer
+#join-large{
+  .container{
+    padding: 20px 0px;
+  }
+  cursor: auto;
+  .join-content{
+    img{
+      width: 80px;
+    }
+    h1{
+      padding: 10px 0px;
+    }
+    h4{
+      width: 72%;
+      margin: auto;
+      padding: 0px 0px 30px 0px;
+    }
+    button{
+      padding: 10px 30px;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+//Footer
+footer{
+  height: 80px;
+  border-top: 1px solid black;
+  .container{
+    height: 100%;
+  }
+  img{
+    height: 70%;
+    left: 1.5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+  }
+  .footer-social{
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    position: relative;
+    .facebook, .twitter, .github, .student-su{
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0px 10px;
+    }
+  }
+}

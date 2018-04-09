@@ -1,0 +1,110 @@
+#events{
+  text-align: center;
+  @include background('../../images/textures/back.jpg');
+  @include backgroundProps(center, cover, repeat);
+  .section-heading{
+    padding: 80px 0px 40px 0px;
+  }
+  .container{
+    padding-bottom: 80px;
+  }
+  #event-categories{
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+    .category-item{
+      width: 15%;
+      text-align: center;
+      cursor: pointer;
+      .category-image{
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        border-radius: 360px;
+        margin: auto;
+        margin-bottom: 10px;
+        img{
+          width: 50%;
+          position: relative;
+          top: 50%;
+          @include transformY(-50%);
+        }
+      }
+    }
+  }
+  #event-content{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .event-item{
+      width: 30%;
+      margin: 0% 1%;
+      background-color: white;
+      min-height: 100px;
+      position: relative;
+      /*Add Box Shadow*/
+      .event-picture{
+        position: relative;
+        height: 100%;
+        max-height: 200px;
+      }
+      h3{
+        padding-top: 20px;
+      }
+      img{
+        width: 15px;
+        margin-right: 10px;
+      }
+      .date{
+        padding-bottom: 20px;
+      }
+    }
+  }
+  button{
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .category-item{
+    width: 30% !important;
+    margin: 20px 0px !important;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .event-item{
+    width: 45% !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .event-item{
+    width: 70% !important;
+    margin-bottom: 60px !important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .category-item{
+    width: 50% !important;
+    margin: 20px 0px !important;
+  }
+}
+
+#event1 {
+  background-image: url('../../images/events/event-images/python.jpg');
+  @include backgroundProps(center, cover, no-repeat);
+}
+
+#event2 {
+  background-image: url('../../images/events/event-images/cabletapping.jpg');
+  @include backgroundProps(center, cover, no-repeat);
+}
+
+#event3 {
+  background-image: url('../../images/events/event-images/e-tech.jpg');
+  @include backgroundProps(center, cover, no-repeat);
+}

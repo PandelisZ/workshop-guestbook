@@ -1,0 +1,79 @@
+#about{
+  height: auto;
+  max-height: 430px;
+  overflow: hidden;
+  .about-left{
+    width: 50%;
+    @include background('../../images/collaboration2.jpg');
+    @include backgroundProps(center, cover, no-repeat);
+  }
+  .about-right{
+    width: 50%;
+    background-color: $dark-grey;
+    margin-left: -4px;
+    vertical-align: top;
+    color: white;
+    padding: 40px 0px;
+    p{
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-size: 1em;
+      letter-spacing: 1px;
+      line-height: 30px;
+      text-align: justify;
+    }
+    button{
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+  .about-left, .about-right{
+    height: 100%;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 975px){
+  #about{
+    max-height: 460px !important;
+  }
+}
+@media screen and (max-width: 850px){
+  #about{
+    max-height: 390px !important;
+  }
+  #about{
+    h1{
+      font-size: 2em !important;
+    }
+    p{
+      font-size: 1em !important;
+      line-height: 20px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  #about{
+    max-height: 420px !important;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .about-left, .about-right{
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .about-left{
+    height: 200px !important;
+  }
+  .about-right{
+    margin-left: 0px !important;
+    text-align: center !important;
+  }
+  #about{
+    max-height: none !important;
+  }
+}

@@ -1,0 +1,82 @@
+/*Scroll nav*/
+.desktop-nav-container[role="scroll"]{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    z-index: 1000;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.1);
+img{
+    height: 70%;
+    position: relative;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    float: left;
+}
+ul{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+a{
+    color: black;
+}
+}
+}
+
+header{
+    transition: all 0.2s ease;
+    height: 100vh;
+    background-color: crimson;
+    text-align: center;
+    position: relative;
+    .desktop-nav-container{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        height: 50px;
+        position: relative;
+        top: 20px;
+        ul{
+            a{
+                margin: 0px 20px;
+                color: white;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    #header-logo{
+        position: relative;
+        top: 50%;
+        margin: -50px auto 0px auto;
+        @include transformY(-50%);
+        img{
+            width: 60%;
+        }
+    }
+    #header-bottom{
+        text-align: center;
+        position: absolute;
+        color: white;
+        bottom: 20px;
+        left: 50%;
+        @include transformX(-50%);
+        h4{
+            letter-spacing: 2px;
+            font-weight: 300;
+            padding-bottom: 5px;
+            color: white;
+            text-transform: capitalize;
+        }
+        .down-arrow{
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            animation: down-arrow-animation 2s infinite;
+            @include background('../../images/arrow-down.svg');
+            @include backgroundProps(center, cover, no-repeat)
+        }
+    }
+}

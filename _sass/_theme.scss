@@ -1,0 +1,132 @@
+button{
+  border: 1px solid black;
+  outline: none;
+  -webkit-appearance: none;
+  padding: 10px 30px;
+  border-radius: 3px;
+  @include transition(0.3s);
+  background-color: transparent;
+}
+
+.button{
+  @extend button
+}
+
+.button-white{
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  @include transition(0.3s);
+}
+.button-white:hover{
+  background-color: white;
+  color: black
+}
+.button-black{
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+  @include transition(0.3s);
+}
+.button-black:hover {
+  background-color: black;
+  color: white;
+}
+
+//Roles
+h1[role="section-heading"]{
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.join {
+  background-color: $dark-grey;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 40px 0;
+  cursor: pointer;
+
+  .flag {
+    padding: 30px;
+  }
+}
+
+#join-small{
+  font-size: 0.7em;
+}
+
+//Social
+//NO OUTLINE
+.facebook{
+  @include background('../../images/social/social-facebook.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+
+.twitter{
+  @include background('../../images/social/social-twitter.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+.github{
+  @include background('../../images/social/social-github.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+
+.instagram{
+  @include background('../../images/social/social-instagram.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+.web{
+  @include background('../../images/social/ios7-world.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+
+//OUTLINE
+.facebook-outline{
+  @include background('../../images/social/social-facebook-outline.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+.facebook-outline:hover{
+  @include background('../../images/social/social-facebook.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+.twitter-outline{
+  @include background('../../images/social/social-twitter-outline.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+.twitter-outline:hover{
+  @include background('../../images/social/social-twitter.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+.github-outline{
+  @include background('../../images/social/social-github-outline.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+.github-outline:hover{
+  @include background('../../images/social/social-github.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+
+.instagram-outline{
+  @include background('../../images/social/social-instagram-outline.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+.instagram-outline:hover{
+  @include background('../../images/social/social-instagram.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+.web-outline{
+  @include background('../../images/social/ios7-world-outline.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+.web-outline:hover{
+  @include background('../../images/social/ios7-world.png');
+  @include backgroundProps(center, cover, no-repeat);
+}
+
+.facebook, .github, .twitter, .web, .instagram, .facebook-outline, .github-outline, .twitter-outline, .web-outline, .instagram-outline{
+  transition: all 0.3s ease;
+}
+

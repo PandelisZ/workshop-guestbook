@@ -1,0 +1,29 @@
+#statistics{
+  height: auto;
+  @include background('../../images/textures/white-texture.jpg');
+  @include backgroundProps(center, cover, repeat);
+  #statistics-content{
+    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .statistics-item{
+    width: 20%;
+    margin: 0px 2%;
+    text-align: center;
+    img{
+      width: 50%;
+      margin: 30px;
+    }
+    h2{
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .statistics-item{
+    width: 40% !important;
+  }
+}

@@ -1,0 +1,104 @@
+$main-font: Avenir, sans-serif;
+$dark-grey: #222222;
+$text-grey: #343434;
+
+
+body, h1, h2, h3 ,h4 ,h5 ,h6, p, a, li{
+  margin: 0px;
+  padding: 0px;
+  font-family: $main-font;
+}
+
+h1{
+  font-size: 2.8em;
+  font-weight: 700;
+}
+h2{
+  font-size: 2em;
+  font-weight: 500;
+}
+h3{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+h4{
+  font-size: 1em;
+  font-weight: 400;
+}
+h5{
+  font-size: 0.8em;
+  font-weight: 300;
+}
+p{
+  font-size: 0.75em;
+}
+
+ul[role="navigation"]{
+  list-style-type: none;
+  margin: 0px;
+  li{
+    display: inline-block;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+html, body, section, article, header, footer, aside{
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.inline *{
+  display: inline-block;
+  font-size: 0px;
+}
+
+*{
+  transition: all 0.3s ease;
+}
+
+@mixin transition($time){
+  transition: all $time ease;
+  -webkit-transition: all $time ease;
+  -moz-transition: all $time ease;
+}
+
+@mixin transformX($amount){
+  transform: translateX($amount);
+  -webkit-transform: translateX($amount);
+  -moz-transform: translateX($amount);;
+}
+
+@mixin transformY($amount){
+  transform: translateY($amount);
+  -webkit-transform: translateY($amount);
+  -moz-transform: translateY($amount);;
+}
+
+@mixin transform($amount){
+  transform: translate($amount, $amount);
+  -webkit-transform: translate($amount, $amount);
+  -moz-transform: translate($amount, $amount);
+}
+
+@mixin background($url){
+  background-image: url($url);
+  -webkit-background-image: url($url);
+  -moz-background-image: url($url);
+}
+
+@mixin backgroundProps($position, $size, $repeat){
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+}

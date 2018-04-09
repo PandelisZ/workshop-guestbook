@@ -1,0 +1,8 @@
+exclude: [vendor]
+
+collections:
+  - guestbook
+
+workshop:
+  name: test
+  github: https://github.com/PandelisZ/workshop-guestbook
