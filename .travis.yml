@@ -3,9 +3,10 @@ rvm:
 - 2.3.1
 sudo: false
 before_script:
-  - pip install --user git+https://github.com/PandelisZ/pyyaml.git@allow-emojis
+  - pip install --user yamllint
   - pip install --user yamale
+  - pip install --user git+https://github.com/PandelisZ/pyyaml.git@allow-emojis
 script:
-  # - yamllint _guestbook/*
+  - yamllint _guestbook/*
   - ruby -Itest tests/tests.rb
   - bundle exec jekyll build
