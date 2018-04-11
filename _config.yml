@@ -1,5 +1,6 @@
 exclude:
   - .github
+  - vendor
 
 collections:
   - guestbook
