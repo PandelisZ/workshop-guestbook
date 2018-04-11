@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.3.1
+sudo: false
+before_script:
+  - pip install --user git+https://github.com/PandelisZ/pyyaml.git@allow-emojis
+  - pip install --user yamale
+script:
+  - yamllint _guestbook/*
+  - ruby -Itest tests/tests.rb
+  - bundle exec jekyll build
