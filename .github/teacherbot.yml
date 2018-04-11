@@ -1,0 +1,21 @@
+# addCollaborators:
+#   newCollaboratorMessage: "This message will appear when someone opens a new issue, and is not already a collaborator."
+#   existingCollaboratorMessage: "This message appears when someone is already a collaborator and they open a new issue."
+# remindMerge:
+#   merged: "This message appears after Pull Request is merged."
+#   unmerged: "This message appears after Pull Request is closed without merging."
+checkPath:
+  name: "File path"
+  path: "_guestbook"
+  detailsURL: "https://vimeo.com/201011288https://github.com/PandelisZ/workshop-guestbook#making-a-change"
+  success: "Your file is in the proper path."
+  failure: "Your file is not in the _guestbook directory. Click details for instructions on how to fix."
+checkExtension:
+  name: "File extension"
+  extension: "yaml"
+  detailsURL: "https://github.com/PandelisZ/workshop-guestbook#making-a-change"
+  success: "Your file has the proper extension."
+failure: "Your file extension is not .yaml. Click details for instructions on how to fix."
+# reopenClosedIssues:
+#   message: "The message displayed when reopening new issues."
+#   whitelistedTeamID: <the GitHub Team ID to be whitelisted, should be a number>
