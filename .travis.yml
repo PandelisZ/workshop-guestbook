@@ -10,3 +10,6 @@ script:
   - yamllint _guestbook/*
   - ruby -Itest tests/tests.rb
   - bundle exec jekyll build
+notifications:
+    webhooks: https://www.travisbuddy.com/
+    on_success: never
