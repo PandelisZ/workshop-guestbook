@@ -15,7 +15,7 @@ checkExtension:
   extension: "yaml"
   detailsURL: "https://github.com/PandelisZ/workshop-guestbook#making-a-change"
   success: "Your file has the proper extension."
-failure: "Your file extension is not .yaml. Click details for instructions on how to fix."
+  failure: "Your file extension is not .yaml. Click details for instructions on how to fix."
 # reopenClosedIssues:
 #   message: "The message displayed when reopening new issues."
 #   whitelistedTeamID: <the GitHub Team ID to be whitelisted, should be a number>
