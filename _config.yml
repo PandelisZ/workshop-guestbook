@@ -6,5 +6,5 @@ collections:
   - guestbook
 
 workshop:
-  name: 
-  github: https://github.com/PandelisZ/workshop-guestbook
+  name: BullHacks
+  github: https://github.com/BullHacks/workshop-guestbook/
