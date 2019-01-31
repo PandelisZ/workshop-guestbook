@@ -32,12 +32,12 @@ title: GitHub Workshop Guestbook
                     <hr/>
                     <div class="guestbook-social">
 
-                      {% if guest.twitter %}
-                        <a href="https://twitter.com/{{guest.twitter}}" alt="Twitter"><i class="fab fa-twitter"></i></a>
+                      {% if guest.linkedin %}
+                        <a href="https://linkedin.com/in/{{guest.linkedin}}" alt="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
                       {% endif %}
 
                       {% if guest.github %}
-                        <a href="https://github.com/{{guest.github}}" alt="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/{{guest.github}}" alt="GitHub" target="_blank"><i class="fab fa-github"></i></a>
                       {% endif %}
 
                       {% if guest.web %}
