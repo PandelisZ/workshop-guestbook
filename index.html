@@ -35,6 +35,10 @@ title: GitHub Workshop Guestbook
                       {% if guest.twitter %}
                         <a href="https://twitter.com/{{guest.twitter}}" alt="Twitter"><i class="fab fa-twitter"></i></a>
                       {% endif %}
+                        
+                      {% if guest.facebook %}
+                        <a href="https://facebook.com/{{guest.facebook}}" alt="Facebook"><i class="fab fa-facebook"></i></a>
+                      {% endif %}
 
                       {% if guest.github %}
                         <a href="https://github.com/{{guest.github}}" alt="GitHub"><i class="fab fa-github"></i></a>
