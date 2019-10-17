@@ -66,7 +66,7 @@ upstream이란, 내가 fork를 떴던 원래 저장소를 의미합니다.
 
 내 저장소 페이지에서 저장소 이름 아래를 보면 **forked from :** 으로 표시됩니다.
 
-PR을 제출하려면 upstream 저장소로 이동하여 **Pull request** 탭을 누르고, **New pull request** 버튼을 누르세요.
+PR을 제출하려면 **Pull request** 탭을 누르고, **New pull request** 버튼을 누르세요.
 
 GitHub가 자동으로 감지하지 못하는 경우 *compare across forks*를 클릭해주세요. 그 다음 PR을 생성하세요.
 
