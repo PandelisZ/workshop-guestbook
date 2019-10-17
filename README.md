@@ -22,9 +22,8 @@ Fork는 현재 저장소를 자신의 저장소로 전체 복사하는 것을 �
 
 그럼, 이 저장소를 fork뜨는것으로 시작해볼까요?
 
-<iframe src="https://ghbtns.com/github-btn.html?user=hjkkhj123&repo=DevFest-Seoul-2019-guestbook&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-
 ![fork](.github/images/fork.gif)
+[![Inline docs](https://ghbtns.com/github-btn.html?user=hjkkhj123&repo=DevFest-Seoul-2019-guestbook&type=fork&count=true&size=large)](https://github.com/hjkkhj123/DevFest-Seoul-2019-guestbook/fork)
 
 
 ### 변경 사항 만들기(방명록 추가하기)
