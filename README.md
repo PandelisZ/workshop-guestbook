@@ -43,6 +43,10 @@ Fork는 현재 저장소를 자신의 저장소로 전체 복사하는 것을 �
 
 ![fork](.github/images/fork.gif)
 
+[![Inline docs](https://githubbadges.com/fork.svg?user=GDG-Seoul&repo=DevFest-Seoul-2019-guestbook)](https://github.com/GDG-Seoul/DevFest-Seoul-2019-guestbook/fork)
+
+위 버튼을 눌러 포크하기
+
 
 ### 변경 사항 만들기(방명록 추가하기)
 
