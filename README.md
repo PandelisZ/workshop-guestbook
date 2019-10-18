@@ -8,6 +8,25 @@
 
 여러분이 작성한 PR이 `merge` 되면, GDG Seoul Github pages에 인사말이 등록됩니다.
 
+### 방명록 양식(미리 복사해주세요!)
+
+- 프로필 url이 없을 경우 https://avatar.tobi.sh/tobiaslins.svg?text=GDG 좌측 parameter에 본인의 이니셜로 변경해주세요.
+- 예시)`https://avatar.tobi.sh/tobiaslins.svg?text=DY`
+- emoji 필드는 여기에서 찾아 복사 붙여넣기 해주세요(키보드의 기본 이모지를 사용하셔도 됩니다.) 👉 [emojipedia.org](https://emojipedia.org/)
+- SNS 계정은 아이디(@이하 메일 제외)만 적어주시면 됩니다. 예시) cdy0510
+
+```
+---
+name: {{이름}}
+image: {{프로필 사진 url}}
+emoji: 🥳
+message: {{인사말}}
+facebook: {{계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.}}
+twitter: {{계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.}}
+github: {{계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.}}
+---
+```
+
 
 
 # 방명록 등록하기
