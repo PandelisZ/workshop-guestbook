@@ -31,13 +31,11 @@ github: {{계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.}
 
 ## GitHub.com을 사용합니다.
 
-### 1. Fork 뜨기
+### 1. Fork 하기
 
-우선 PR을 날리기 위해 현재 repository(이하 저장소)를 자신의 계정으로 포크떠주세요.
-Fork는 현재 저장소를 자신의 저장소로 전체 복사하는 것을 의미합니다. 그 후엔 자신이 저장소의 소유권을 갖게되고, 소스를 관리할 수 있습니다.
-이를 통해 저장소에 직접 액세스 할 필요없이 프로젝트에 기능을 추가 할 수 있습니다.
+우선 PR을 하기 위해 현재 repository(이하 저장소)를 자신의 계정으로 포크 해주세요. Fork는 현재 저장소를 자신의 저장소로 전체 복사하는 것을 의미합니다. Fork한 저장소는 본인 계정의 저장소가 되어 직접 소스를 관리할 수 있습니다. 이를 통해 원래 저장소에 직접 액세스 할 필요 없이 프로젝트에 기능을 추가 할 수 있습니다.
 
-그럼, 이 저장소를 fork뜨는것으로 시작해볼까요?
+그럼, 이 저장소를 Fork하는 것으로 시작해볼까요?
 
 ![fork](.github/images/fork.gif)
 
@@ -86,14 +84,16 @@ github: cdy0510
 ### 4. PR(Pull request) 제출하기
 
 원하는 내용을 변경 했으므로 **upstream** (원래 저장소)에 PR을 제출할 수 있습니다. [GitHub Flow](https://guides.github.com/introduction/flow/)
-upstream에 PR을 날리면 내 코드를 반영할 수 있습니다. (upstream이란, 내가 fork를 떴던 원래 저장소를 의미합니다.)
+upstream에 PR을 제출하면 내 코드를 반영할 수 있습니다. 
+
+upstream이란, 내가 fork했던 원래 저장소를 의미합니다.
 
 내 저장소 페이지에서 저장소 이름 아래를 보면 **forked from :** 으로 표시됩니다.<br />PR을 제출하려면 **Pull request** 탭을 누르고, **New pull request** 버튼을 누르세요.
 
 GitHub가 자동으로 감지하지 못하는 경우 *compare across forks*를 클릭해주세요. 그 다음 PR을 생성하세요.
 
 base repository는 GDG Seoul의 저장소가 될 것이고, head repository는 자신이 수정한 저장소의 브랜치가 될 것입니다.
-PR은 `master` 쪽으로 날려주시면 됩니다.
+PR은 `master` 쪽으로 제출해주시면 됩니다.
 
 ![pull request](.github/images/pullrequest.gif)
 
@@ -101,5 +101,5 @@ PR은 `master` 쪽으로 날려주시면 됩니다.
 
 ### 축하합니다!! :tada:
 
-여러분은 성공적으로 PR을 작성하셨습니다!! 
+여러분은 성공적으로 PR을 제출하셨습니다!! 
 방명록을 올바르게 입력하셨다면, 담당자가 PR을 승인하고 곧 페이지에 표시될 것입니다.
