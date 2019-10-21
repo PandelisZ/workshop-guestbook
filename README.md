@@ -15,13 +15,13 @@
 
 ```
 ---
-name: {{이름}}
-image: {{프로필 사진 url}}
+name: 이름
+image: https://avatar.tobi.sh/tobiaslins.svg?text=GDG
 emoji: 🥳
-message: {{인사말}}
-facebook: {{계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.}}
-twitter: {{계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.}}
-github: {{계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.}}
+message: 인사말
+facebook: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.
+twitter: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.
+github: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.
 ---
 ```
 
