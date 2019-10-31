@@ -6,5 +6,5 @@ collections:
   - guestbook
 
 workshop:
-  name: 
-  github: https://github.com/PandelisZ/workshop-guestbook
+  name: DevFest Seoul 2019
+  github: https://github.com/GDG-Seoul/DevFest-Seoul-2019-guestbook
