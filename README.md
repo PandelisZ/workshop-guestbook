@@ -16,7 +16,7 @@ Branch를 만들어서 방명록을 Commit하는 숙제입니다. 어렵지 않�
 
 ## 2. SourceTree를 실행하세요
 > 초대를 수락하셨다면 이 저장소에 Commit을 Push할 수 있습니다! 
-> 이제 SourceTree를 사용해야하니 실헹해주세요! 
+> 이제부터는 SourceTree를 사용해야 합니다.
 
 ![run](.github/images/runsourcetree.JPG)
 
@@ -31,10 +31,9 @@ Branch를 만들어서 방명록을 Commit하는 숙제입니다. 어렵지 않�
 ### Branch
 
 > 실제로 사용되고 잘 작동하는 코드는 보통 master에 둡니다. 
+> 안정적인 코드가 있는 master와 분리시켜서 독립적으로 개발을 하기 위한 새로운 Branch를 만들어주세요.
 
-> master는 안정적으로 저희가 작업하고 Commit하기 위한 새로운 Branch를 만들어주세요.
-
-> Branch명은 어떤 작업용인지 알 수 있도록 설정해주세요.
+> Branch명은 어떤 작업용인지 알 수 있도록 지어 주세요.
 
 ![createbranch](.github/images/createbranch.gif)
 
@@ -64,13 +63,13 @@ github: IamGroooooot
 ### Commit
 
 위와 같이 만든 자기의 방명록을 자신이 만든 Branch에 **commit**해주세요. 
-Commit 메시지는 간단 명료해야지 다른 사람들이 변경했거나 추가한 내용이 무엇인지 파악하기 쉽습니다.
+다른 사람들이 변경/추가된 내용을 쉽게 파악하게 하기 위해서 Commit 메시지는 간단/명료하게 작성해야 합니다.
 
 ![commitguestfile](.github/images/commitguestfile.gif)
 
 ### Push
 
-원하는 작업을 완료했으면 **origin**에 그 변경 사항을 push해야 합니다. master가 아니라 자신이 만든 Branch명을 선택해서 Push해주세요. 
+원하는 작업을 완료했으면 **origin**(기본 원격 저장소)에 그 변경 사항을 Push해야 합니다. master가 아니라 자신이 만든 Branch명을 선택해서 Push해주세요. 
 
 ![pushguestfile](.github/images/pushguestfile.gif)
 
