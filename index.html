@@ -1,74 +1,82 @@
 ---
 title: CIEN 2020
 ---
+
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="css/home.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/favicon.ico"/>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+      integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <title>{{ page.title }}</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <section id="guestbook">
-        <div class="container">
-            <div class="section-header">
-                <h1 role="section-heading">{{site.workshop.name}} Guestbook</h1>
-                <h3><a href="{{site.workshop.github}}">Sign the guestbook</a></h3>
-            </div>
-
-            <div class="guestbook-content">
-              {% for guest in site.guestbook %}
-                <div class="guestbook-item">
-                    <div class="guestbook-profile">
-                        <img src="{{guest.image}}" alt="{{guest.name}}"/>
-                        <span class="emoji">{{guest.emoji}}</span>
-                    </div>
-                    <h2>{{guest.name}}</h2>
-                    <h4>{{guest.message}}</h4>
-                    <hr/>
-                    <div class="guestbook-social">
-
-                      {% if guest.twitter %}
-                        <a href="https://twitter.com/{{guest.twitter}}" alt="Twitter"><i class="fab fa-twitter"></i></a>
-                      {% endif %}
-                        
-                      {% if guest.facebook %}
-                        <a href="https://facebook.com/{{guest.facebook}}" alt="Facebook"><i class="fab fa-facebook"></i></a>
-                      {% endif %}
-
-                      {% if guest.github %}
-                        <a href="https://github.com/{{guest.github}}" alt="GitHub"><i class="fab fa-github"></i></a>
-                      {% endif %}
-
-                      {% if guest.web %}
-                        <a href="http://{{guest.web}}" alt="Website"><i class="fas fa-globe"></i></a>
-                      {% endif %}
-
-                    </div>
-                </div>
-              {% endfor %}
-          </div>
+      <div class="container">
+        <div class="section-header">
+          <h1 role="section-heading">{{site.workshop.name}} Guestbook</h1>
+          <h3><a href="{{site.workshop.github}}">Sign the guestbook</a></h3>
         </div>
-    </section>
 
+        <div class="guestbook-content">
+          {% for guest in site.guestbook %}
+          <div class="guestbook-item">
+            <div class="guestbook-profile">
+              <img src="{{guest.image}}" alt="{{guest.name}}" />
+              <span class="emoji">{{guest.emoji}}</span>
+            </div>
+            <h2>{{guest.name}}</h2>
+            <h4>{{guest.message}}</h4>
+            <hr />
+            <div class="guestbook-social">
+              {% if guest.twitter %}
+              <a href="https://twitter.com/{{guest.twitter}}" alt="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              {% endif %} {% if guest.facebook %}
+              <a href="https://facebook.com/{{guest.facebook}}" alt="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              {% endif %} {% if guest.github %}
+              <a href="https://github.com/{{guest.github}}" alt="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              {% endif %} {% if guest.web %}
+              <a href="https://{{guest.web}}" alt="Website"
+                ><i class="fas fa-globe"></i
+              ></a>
+              {% endif %} {% if guest.instagram %}
+              <a
+                href="https://instagram.com/{{guest.instagram}}"
+                alt="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
 
     <section class="join" id="join-large">
-        <div class="container">
-            <div class="join-content">
-                <h3 role="section-heading">Sign the CIEN 2020 guestbook!</h3>
-                <div class="flag">
-                        <img src="images/flag.png" alt="">
-                </div>
-                <a href="{{site.workshop.github}}" class="button button-white">Sign the guestbook!</a>
-            </div>
+      <div class="container">
+        <div class="join-content">
+          <h3 role="section-heading">Sign the CIEN 2020 guestbook!</h3>
+          <div class="flag">
+            <img src="images/flag.png" alt="" />
+          </div>
+          <a href="{{site.workshop.github}}" class="button button-white"
+            >Sign the guestbook!</a
+          >
         </div>
+      </div>
     </section>
-
-
-</body>
-
+  </body>
 </html>
