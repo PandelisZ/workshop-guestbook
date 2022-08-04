@@ -9,6 +9,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      flex-direction: row-reverse;
       .guestbook-item{
         background-color: #f9f9f9;
         width: 20%;
