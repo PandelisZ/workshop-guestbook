@@ -8,7 +8,7 @@
 
 ### 방명록 양식 (미리 복사해주세요!)
 
-- 프로필 url이 없을 경우 https://avatar.tobi.sh/tobiaslins.svg?text=GDG 좌측 parameter에 본인의 이니셜로 변경해주세요.
+- 프로필 url이 없을 경우 https://avatar.tobi.sh/tobiaslins.svg?text=INF 좌측 parameter에 본인의 이니셜로 변경해주세요.
   - 예시)`https://avatar.tobi.sh/tobiaslins.svg?text=DY`
 - emoji 필드는 여기에서 찾아 복사 붙여넣기 해주세요 (키보드의 기본 이모지를 사용하셔도 됩니다.) 👉 [emojipedia.org](https://emojipedia.org/)
 - SNS 계정은 아이디(@이하 메일 제외)만 적어주시면 됩니다. 예시) cdy0510
@@ -16,7 +16,7 @@
 ```
 ---
 name: 이름
-image: https://avatar.tobi.sh/tobiaslins.svg?text=GDG
+image: https://avatar.tobi.sh/tobiaslins.svg?text=INF
 emoji: 🥳
 message: 인사말
 facebook: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.
@@ -92,7 +92,7 @@ upstream이란, 내가 fork했던 원래 저장소를 의미합니다.
 
 GitHub가 자동으로 감지하지 못하는 경우 *compare across forks*를 클릭해주세요. 그 다음 PR을 생성하세요.
 
-base repository는 GDG Seoul의 저장소가 될 것이고, head repository는 자신이 수정한 저장소의 브랜치가 될 것입니다.
+base repository는 INFCON 2022의 저장소가 될 것이고, head repository는 자신이 수정한 저장소의 브랜치가 될 것입니다.
 PR은 `master` 쪽으로 제출해주시면 됩니다.
 
 ![pull request](.github/images/pullrequest.gif)
