@@ -1,8 +1,8 @@
-# DevFest Seoul 2019 방명록 🥳
+# INFCON 2022 방명록 🥳
 
 안녕하세요! Commit and Candy 액티비티에 오신것을 환영합니다!<br />개발자들의 축제인만큼 재밌는 Commit을 날려보지 않겠어요?
 
-아래 설명을 차근차근 따라오시다보면 PR(Pull Request)도 어렵지 않아요!<br />여러분이 작성한 PR이 `merge` 되면, GDG Seoul Github pages에 인사말이 등록됩니다.
+아래 설명을 차근차근 따라오시다보면 PR(Pull Request)도 어렵지 않아요!<br />여러분이 작성한 PR이 `merge` 되면, INFCON 2022 Github pages에 인사말이 등록됩니다.
 
 
 
@@ -39,9 +39,9 @@ github: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.
 
 ![fork](.github/images/fork.gif)
 
-[![Inline docs](https://githubbadges.com/fork.svg?user=GDG-Seoul&repo=DevFest-Seoul-2019-guestbook)](https://github.com/GDG-Seoul/DevFest-Seoul-2019-guestbook/fork)
+[Fork](https://github.com/inflearn/infcon2022-guestbook/fork)
 
-위 버튼을 눌러 포크하기
+위 링크를 눌러 포크하기
 
 
 
@@ -49,18 +49,18 @@ github: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.
 
 저장소는 이제 GitHub 프로필 아래에 별도의 저장소로 존재합니다.
 
-포크에서 `/ _guestbook` 폴더로 가서 **Create new file**을 클릭해 새 파일을 만들어주세요.
+포크에서 `/_guestbook` 폴더로 가서 **Create new file** 버튼을 클릭해 새 파일을 만들어주세요.
 이 파일 이름을 **{yourname}.yaml**로 해주세요. 그런 다음 아래 양식을 파일에 붙여 넣고 자신의 정보로 바꿉니다. *name* 및 *image*를 제외하고 필요하지 않은 필드는 삭제할 수 있습니다.
 
 ```
 ---
-name: 조다영
-image: https://avatar.tobi.sh/tobiaslins.svg?text=DY
+name: <<이름>>
+image: 사용하고 싶은 이미지 링크 or https://avatar.tobi.sh/tobiaslins.svg?text={{이니셜}}
 emoji: 🥳
-message: 안녕하세요! GDG Seoul 최고!
-facebook: cdy0510
-twitter: 
-github: cdy0510
+message: INFCON 기대됩니다!
+facebook: {{페이스북 아이디}}
+twitter: {{트위터 아이디}}
+github: {{깃허브 아이디}}
 ---
 ```
 
