@@ -13,6 +13,9 @@ title: INFCON 2022 Guestbook
         #guestbook {
             text-align: center;
         }
+        .section-header {
+            background: #000;
+        }
     </style>
 </head>
 
@@ -22,7 +25,7 @@ title: INFCON 2022 Guestbook
         <div class="section-header">
             <img src="images/infcon-guestbook.png" alt="인프콘 로고">
         </div>
-        <a href="{{site.workshop.github}}" class="button button-white">PR 제출하러 가기🕊</a>
+        <a href="{{site.workshop.github}}" class="button">PR 제출하러 가기🕊</a>
         <div class="container">
             <div class="guestbook-content">
               {% for guest in site.guestbook %}
