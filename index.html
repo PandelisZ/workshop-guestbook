@@ -9,18 +9,21 @@ title: INFCON 2022 Guestbook
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <title>{{ page.title }}</title>
+    <style>
+        #guestbook {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
     <section id="guestbook">
+        <div class="section-header">
+            <img src="images/infcon-guestbook.png" alt="인프콘 로고">
+        </div>
+        <a href="{{site.workshop.github}}" class="button button-white">PR 제출하러 가기🕊</a>
         <div class="container">
-            <div class="section-header">
-                <img src="images/logo.png" alt="인프콘 로고">
-                <h1 role="section-heading">INFCON 2022 방명록</h1>
-                <h3><a href="{{site.workshop.github}}">PR 제출하러 가기!</a></h3>
-            </div>
-
             <div class="guestbook-content">
               {% for guest in site.guestbook %}
                 <div class="guestbook-item">
