@@ -41,9 +41,9 @@ github: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.
 
 ![fork](.github/images/fork.gif)
 
-[Fork](https://github.com/inflearn/infcon2022-guestbook/fork)
+#### [[Fork]](https://github.com/inflearn/infcon2022-guestbook/fork)
 
-위 링크를 눌러 포크하기
+위 링크를 눌러 포크하기 (모바일에서는 위 버튼을 통해 fork할 수 있습니다.)
 
 
 
