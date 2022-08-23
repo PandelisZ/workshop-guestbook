@@ -5,30 +5,6 @@ IT인의 축제 인프콘에서 방명록을 남기고 서로 네트워킹해보
 
 아래 설명을 차근차근 따라오시다보면 PR(Pull Request)도 어렵지 않아요!<br />여러분이 작성한 PR이 `merge` 되면, INFCON 2022 방명록에 인사말이 등록됩니다.
 
-[url](../../new/master?filename=yournewfile.txt&value=---%0Aname%3A%20%EC%9D%B4%EB%A6%84%0Aimage%3A%20https%3A%2F%2Favatar.tobi.sh%2Ftobiaslins.svg%3Ftext%3DINF%0Aemoji%3A%20%F0%9F%A5%B3%0Amessage%3A%20%EC%9D%B8%EC%82%AC%EB%A7%90%0Afacebook%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%20%2F%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%0Atwitter%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%20%2F%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%0Agithub%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%20%2F%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%20%0A%2F%2F%20github%20%EA%B3%84%EC%A0%95%EC%95%84%EC%9D%B4%EB%94%94%EB%8A%94%20%EB%B3%B8%EC%9D%B8%20%ED%94%84%EB%A1%9C%ED%95%84%20%ED%8E%98%EC%9D%B4%EC%A7%80%20URL%EC%97%90%EC%84%9C%20%ED%99%95%EC%9D%B8%ED%95%98%EC%8B%A4%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20e.%20g.%20https%3A%2F%2Fgithub.com%2F%7B%7Bid%7D%7D%0A---)
-
-### 방명록 양식 (미리 복사해주세요!)
-
-- 프로필 url이 없을 경우 https://avatar.tobi.sh/tobiaslins.svg?text=INF 좌측 parameter에 본인의 이니셜로 변경해주세요.
-  - 예시)`https://avatar.tobi.sh/tobiaslins.svg?text=DY`
-- emoji 필드는 여기에서 찾아 복사 붙여넣기 해주세요 (키보드의 기본 이모지를 사용하셔도 됩니다.) 👉 [emojipedia.org](https://emojipedia.org/)
-- SNS 계정은 아이디(@이하 메일 제외)만 적어주시면 됩니다. 예시) cdy0510
-
-```
----
-name: 이름
-image: https://avatar.tobi.sh/tobiaslins.svg?text=INF
-emoji: 🥳
-message: 인사말
-facebook: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.
-twitter: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.
-github: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다. 
-// github 계정아이디는 본인 프로필 페이지 URL에서 확인하실수 있습니다. e. g. https://github.com/{{id}}
----
-```
-
-
-
 # 📝 방명록 등록하기
 
 ## GitHub.com을 사용합니다.
@@ -51,18 +27,28 @@ github: 계정 아이디 / 없으면 해당 라인 삭제하셔도 됩니다.
 
 저장소는 이제 GitHub 프로필 아래에 별도의 저장소로 존재합니다.
 
-포크에서 `/_guestbook` 폴더로 가서 **Create new file** 버튼을 클릭해 새 파일을 만들어주세요.
+포크의 `/_guestbook` 폴더로 가서 **Create new file** 버튼을 클릭해 새 파일을 만들어주세요. (하단의 버튼을 클릭하면 쉽게 생성할 수 있습니다.)
+
 이 파일 이름을 **{yourname}.yaml**로 해주세요. 그런 다음 아래 양식을 파일에 붙여 넣고 자신의 정보로 바꿉니다. *name* 및 *image*를 제외하고 필요하지 않은 필드는 삭제할 수 있습니다.
+
+#### 방명록 양식
+
+- 프로필 url이 없을 경우 https://avatar.tobi.sh/tobiaslins.svg?text=INF 좌측 parameter에 본인의 이니셜로 변경해주세요.
+  - 예시)`https://avatar.tobi.sh/tobiaslins.svg?text=DY`
+  - 예시)`https://github.com/{{id}}.png`
+- emoji 필드는 여기에서 찾아 복사 붙여넣기 해주세요 (키보드의 기본 이모지를 사용하셔도 됩니다.) 👉 [emojipedia.org](https://emojipedia.org/)
+- SNS 계정은 아이디(@이하 메일 제외)만 적어주시면 됩니다. 예시) cdy0510
 
 ```
 ---
-name: <<이름>>
-image: 사용하고 싶은 이미지 링크 or https://avatar.tobi.sh/tobiaslins.svg?text={{이니셜}}
-emoji: 🥳
-message: INFCON 기대됩니다!
-facebook: {{페이스북 아이디}}
-twitter: {{트위터 아이디}}
-github: {{깃허브 아이디}}
+name: {{이름}}
+image: https://avatar.tobi.sh/tobiaslins.svg?text={{이니셜}} or 사용하고 싶은 이미지 링크
+emoji: {{이모티콘}}
+message: 인사말
+facebook: {{페이스북 아이디}} / 없으면 해당 라인 삭제하셔도 됩니다.
+twitter: {{트위터 아이디}} / 없으면 해당 라인 삭제하셔도 됩니다.
+github: {{깃허브 아이디}} / 없으면 해당 라인 삭제하셔도 됩니다. 
+// github 계정아이디는 본인 프로필 페이지 URL에서 확인하실수 있습니다. e. g. https://github.com/{{id}}
 ---
 ```
 
@@ -72,7 +58,9 @@ github: {{깃허브 아이디}}
 
 > emoji 필드는 여기에서 찾아 복사 붙여넣기 해주세요(키보드의 기본 이모지를 사용하셔도 됩니다.) 👉 [emojipedia.org](https://emojipedia.org/) 
 
+[[CREATE NEW FILE]](../../new/master?filename=_guestbook/yourname.yaml&value=---%0Aname%3A%20%EC%9D%B4%EB%A6%84%0Aimage%3A%20https%3A%2F%2Favatar.tobi.sh%2Ftobiaslins.svg%3Ftext%3DINF%0Aemoji%3A%20%F0%9F%A5%B3%0Amessage%3A%20%EC%9D%B8%EC%82%AC%EB%A7%90%0Afacebook%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%20%2F%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%0Atwitter%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%20%2F%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%0Agithub%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%20%2F%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%20%0A%2F%2F%20github%20%EA%B3%84%EC%A0%95%EC%95%84%EC%9D%B4%EB%94%94%EB%8A%94%20%EB%B3%B8%EC%9D%B8%20%ED%94%84%EB%A1%9C%ED%95%84%20%ED%8E%98%EC%9D%B4%EC%A7%80%20URL%EC%97%90%EC%84%9C%20%ED%99%95%EC%9D%B8%ED%95%98%EC%8B%A4%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20e.%20g.%20https%3A%2F%2Fgithub.com%2F%7B%7Bid%7D%7D%0A---/_guestbook)
 
+위 버튼 통해 파일을 생성할 수 있습니다.
 
 ### 3. Commit하기
 
