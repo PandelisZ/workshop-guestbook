@@ -6,22 +6,37 @@ IT인의 축제 인프콘에서 방명록을 남기고 서로 네트워킹해보
 아래 설명을 차근차근 따라오시다보면 PR(Pull Request)도 어렵지 않아요!<br />여러분이 작성한 PR이 `merge` 되면, INFCON 2022 방명록에 인사말이 등록됩니다.
 
 ## ◼︎ 방명록 등록 방법 요약 
-1. [[방명록 추가하기(변경 사항 만들기)]](../../new/master?filename=_guestbook/yourname.yaml&value=---%0Aname%3A%20%EC%9D%B4%EB%A6%84%0Aimage%3A%20https%3A%2F%2Fgithub.com%2F%7B%7Bid%7D%7D.png%20%23%20%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%95%84%EC%9D%B4%EB%94%94%EB%A5%BC%20%EC%9E%85%EB%A0%A5%ED%95%98%EC%8B%9C%EB%A9%B4%20%ED%94%84%EB%A1%9C%ED%95%84%20%EC%9D%B4%EB%AF%B8%EC%A7%80%EA%B0%80%20%EB%B3%B4%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%23%20https%3A%2F%2Favatar.tobi.sh%2Ftobiaslins.svg%3Ftext%3D%7B%7B%EC%9D%B4%EB%8B%88%EC%85%9C%7D%7D%20%0A%23%20%EA%B9%83%ED%97%88%EB%B8%8C%20%ED%94%84%EB%A1%9C%ED%95%84%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%8C%80%EC%8B%A0%20%EC%9C%84%20%EC%A3%BC%EC%86%8C%EB%A1%9C%20%EC%9D%B4%EB%8B%88%EC%85%9C%EC%9D%B4%20%EC%A0%81%ED%9E%8C%20%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%8F%84%20%EC%82%AC%EC%9A%A9%EA%B0%80%EB%8A%A5%ED%95%A9%EB%8B%88%EB%8B%A4%0Aemoji%3A%20%F0%9F%A5%B3%0Amessage%3A%20%EC%9D%B8%EC%82%AC%EB%A7%90%0Afacebook%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%20%2F%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%0Atwitter%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%20%2F%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%0Agithub%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%20%2F%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%20%0A%23%20github%20%EA%B3%84%EC%A0%95%EC%95%84%EC%9D%B4%EB%94%94%EB%8A%94%20%EB%B3%B8%EC%9D%B8%20%ED%94%84%EB%A1%9C%ED%95%84%20%ED%8E%98%EC%9D%B4%EC%A7%80%20URL%EC%97%90%EC%84%9C%20%ED%99%95%EC%9D%B8%ED%95%98%EC%8B%A4%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20e.%20g.%20https%3A%2F%2Fgithub.com%2F%7B%7Bid%7D%7D%0A---)
+1. **[[방명록 추가하기(변경 사항 만들기)]](../../new/master?filename=_guestbook/yourname.yaml&value=---%0Aname%3A%20%EC%9D%B4%EB%A6%84%0A%0A%23%20%EA%B9%83%ED%97%88%EB%B8%8C%20%EC%95%84%EC%9D%B4%EB%94%94%EB%A5%BC%20%EC%9E%85%EB%A0%A5%ED%95%98%EC%8B%9C%EB%A9%B4%20%ED%94%84%EB%A1%9C%ED%95%84%20%EC%9D%B4%EB%AF%B8%EC%A7%80%EA%B0%80%20%EB%B3%B4%EC%9E%85%EB%8B%88%EB%8B%A4.%0A%23%20https%3A%2F%2Favatar.tobi.sh%2Ftobiaslins.svg%3Ftext%3D%7B%7B%EC%9D%B4%EB%8B%88%EC%85%9C%7D%7D%20%0A%23%20%EA%B9%83%ED%97%88%EB%B8%8C%20%ED%94%84%EB%A1%9C%ED%95%84%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%8C%80%EC%8B%A0%20%EC%9C%84%20%EC%A3%BC%EC%86%8C%EB%A1%9C%20%EC%9D%B4%EB%8B%88%EC%85%9C%EC%9D%B4%20%EC%A0%81%ED%9E%8C%20%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%8F%84%20%EC%82%AC%EC%9A%A9%EA%B0%80%EB%8A%A5%ED%95%A9%EB%8B%88%EB%8B%A4%0Aimage%3A%20https%3A%2F%2Fgithub.com%2F%7B%7Bid%7D%7D.png%20%0A%0Aemoji%3A%20%F0%9F%A5%B3%0A%0Amessage%3A%20%EC%9D%B8%EC%82%AC%EB%A7%90%0A%0A%23%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%0A%23%20facebook%20%EA%B3%84%EC%A0%95%EC%95%84%EC%9D%B4%EB%94%94%EB%8A%94%20%EB%B3%B8%EC%9D%B8%20%ED%94%84%EB%A1%9C%ED%95%84%20%ED%8E%98%EC%9D%B4%EC%A7%80%20URL%EC%97%90%EC%84%9C%20%ED%99%95%EC%9D%B8%ED%95%98%EC%8B%A4%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20%0A%23%20e.%20g.%20facebook.com%2Fprofile.php%3Fid%3D%7B%7Bid%7D%7D%20%ED%98%B9%EC%9D%80%20facebook.com%2F%7B%7Bid%7D%7D%0Afacebook%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%0A%0A%23%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%0A%23%20twitter%20%EA%B3%84%EC%A0%95%EC%95%84%EC%9D%B4%EB%94%94%EB%8A%94%20%EB%B3%B8%EC%9D%B8%20%ED%94%84%EB%A1%9C%ED%95%84%20%ED%8E%98%EC%9D%B4%EC%A7%80%20URL%EC%97%90%EC%84%9C%20%ED%99%95%EC%9D%B8%ED%95%98%EC%8B%A4%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20e.%20g.%20twitter.com%2F%7B%7Bid%7D%7D%0Atwitter%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%0A%0A%23%20%EC%97%86%EC%9C%BC%EB%A9%B4%20%ED%95%B4%EB%8B%B9%20%EB%9D%BC%EC%9D%B8%20%EC%82%AD%EC%A0%9C%ED%95%98%EC%85%94%EB%8F%84%20%EB%90%A9%EB%8B%88%EB%8B%A4.%20%0A%23%20github%20%EA%B3%84%EC%A0%95%EC%95%84%EC%9D%B4%EB%94%94%EB%8A%94%20%EB%B3%B8%EC%9D%B8%20%ED%94%84%EB%A1%9C%ED%95%84%20%ED%8E%98%EC%9D%B4%EC%A7%80%20URL%EC%97%90%EC%84%9C%20%ED%99%95%EC%9D%B8%ED%95%98%EC%8B%A4%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.%20e.%20g.%20github.com%2F%7B%7Bid%7D%7D%0Agithub%3A%20%EA%B3%84%EC%A0%95%20%EC%95%84%EC%9D%B4%EB%94%94%20%0A---)**
     - fork 버튼이 보이면 눌러주세요!
-2. 커밋 메세지 작성하기
-3. [[풀 리퀘스트 ]](../../../infcon2022-guestbook/compare)
+2. **커밋 메세지 작성하기**
+3. **[[풀 리퀘스트 남기기]](../../../infcon2022-guestbook/compare)**
 ----------
 ## ◼︎ 방명록 양식(**방명록 추가하기 단계**에서 필요합니다. 중요!)
 ```
 ---
-name: {{이름}}
-image: https://avatar.tobi.sh/tobiaslins.svg?text={{이니셜}} or https://github.com/{{id}}.png or 사용하고 싶은 이미지 링크
-emoji: {{이모티콘}}
+name: 이름
+
+# 깃허브 아이디를 입력하시면 프로필 이미지가 보입니다.
+# https://avatar.tobi.sh/tobiaslins.svg?text={{이니셜}} 
+# 깃허브 프로필 이미지 대신 위 주소로 이니셜이 적힌 이미지도 사용가능합니다
+image: https://github.com/{{id}}.png 
+
+emoji: 🥳
+
 message: 인사말
-facebook: {{페이스북 아이디}} / 없으면 해당 라인 삭제하셔도 됩니다.
-twitter: {{트위터 아이디}} / 없으면 해당 라인 삭제하셔도 됩니다.
-github: {{깃허브 아이디}} / 없으면 해당 라인 삭제하셔도 됩니다. 
-// github 계정아이디는 본인 프로필 페이지 URL에서 확인하실수 있습니다. e. g. https://github.com/{{id}}
+
+# 없으면 해당 라인 삭제하셔도 됩니다.
+# facebook 계정아이디는 본인 프로필 페이지 URL에서 확인하실수 있습니다. 
+# e. g. facebook.com/profile.php?id={{id}} 혹은 facebook.com/{{id}}
+facebook: 계정 아이디
+
+# 없으면 해당 라인 삭제하셔도 됩니다.
+# twitter 계정아이디는 본인 프로필 페이지 URL에서 확인하실수 있습니다. e. g. twitter.com/{{id}}
+twitter: 계정 아이디
+
+# 없으면 해당 라인 삭제하셔도 됩니다. 
+# github 계정아이디는 본인 프로필 페이지 URL에서 확인하실수 있습니다. e. g. github.com/{{id}}
+github: 계정 아이디 
 ---
 ```
 
@@ -59,13 +74,12 @@ github: {{깃허브 아이디}} / 없으면 해당 라인 삭제하셔도 됩니
 ```
 ---
 name: {{이름}}
-image: https://avatar.tobi.sh/tobiaslins.svg?text={{이니셜}} or https://github.com/{{id}}.png or 사용하고 싶은 이미지 링크
+image: https://avatar.tobi.sh/tobiaslins.svg?text={{이니셜}}
 emoji: {{이모티콘}}
 message: 인사말
-facebook: {{페이스북 아이디}} / 없으면 해당 라인 삭제하셔도 됩니다.
-twitter: {{트위터 아이디}} / 없으면 해당 라인 삭제하셔도 됩니다.
-github: {{깃허브 아이디}} / 없으면 해당 라인 삭제하셔도 됩니다. 
-// github 계정아이디는 본인 프로필 페이지 URL에서 확인하실수 있습니다. e. g. https://github.com/{{id}}
+facebook: {{페이스북 아이디}}
+twitter: {{트위터 아이디}}
+github: {{깃허브 아이디}}
 ---
 ```
 
