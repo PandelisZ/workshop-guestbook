@@ -1,5 +1,5 @@
 ---
-title: GitHub Workshop Guestbook
+title: INFCON 2022 Guestbook
 ---
 <!DOCTYPE html>
 <html>
@@ -9,17 +9,24 @@ title: GitHub Workshop Guestbook
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <title>{{ page.title }}</title>
+    <style>
+        #guestbook {
+            text-align: center;
+        }
+        .section-header {
+            background: #000;
+        }
+    </style>
 </head>
 
 <body>
 
     <section id="guestbook">
+        <div class="section-header">
+            <img src="images/infcon-guestbook.png" alt="인프콘 로고">
+        </div>
+        <a href="{{site.workshop.github}}" class="button">PR 제출하러 가기🕊</a>
         <div class="container">
-            <div class="section-header">
-                <h1 role="section-heading">{{site.workshop.name}} Workshop Guestbook</h1>
-                <h3><a href="{{site.workshop.github}}">Sign the guestbook</a></h3>
-            </div>
-
             <div class="guestbook-content">
               {% for guest in site.guestbook %}
                 <div class="guestbook-item">
@@ -31,6 +38,10 @@ title: GitHub Workshop Guestbook
                     <h4>{{guest.message}}</h4>
                     <hr/>
                     <div class="guestbook-social">
+
+                      {% if guest.facebook %}
+                        <a href="https://facebook.com/{{guest.facebook}}" alt="Facebook"><i class="fab fa-facebook"></i></a>
+                      {% endif %}
 
                       {% if guest.twitter %}
                         <a href="https://twitter.com/{{guest.twitter}}" alt="Twitter"><i class="fab fa-twitter"></i></a>
@@ -59,11 +70,11 @@ title: GitHub Workshop Guestbook
     <section class="join" id="join-large">
         <div class="container">
             <div class="join-content">
-                <h3 role="section-heading">Sign the workshop guestbook!</h3>
+<!--                <h3 role="section-heading">PR(pull request)제출하고 사탕받아가세요!</h3>-->
                 <div class="flag">
                         <img src="images/flag.png" alt="">
                 </div>
-                <a href="{{site.workshop.github}}" class="button button-white">Sign the guestbook!</a>
+                <a href="{{site.workshop.github}}" class="button button-white">PR 제출하러 가기🕊</a>
             </div>
         </div>
     </section>
